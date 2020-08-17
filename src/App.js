@@ -1,13 +1,37 @@
+import React, { Component } from "react";
+import Avatar from "./Avatar";
 
-import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>My React App</h1>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className= "cards">
+        <div className="small">
+          <Avatar />
+          <Avatar />
+          <Avatar />
+        </div>
+        <div className="medium">
+          <Avatar />
+          <Avatar />
+          <Avatar />
+          
+        </div>
+        <div className="large" style={{size: "large"}}>
+          <Avatar />
+          <Avatar />
+          <Avatar />
+          
+        </div>
+        <div style={{size:"xl", backgroundColor: "pink"}} className="xlarge" >
+          <Avatar />
+          <Avatar />
+          <Avatar />
+          
+        </div>
+      </div>
+    );
+  }
 }
-
 
 export default App;
